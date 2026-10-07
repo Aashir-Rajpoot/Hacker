@@ -1,0 +1,22 @@
+{
+  "name": "cipherlock",
+  "productName": "CIPHERLOCK",
+  "version": "0.1.0",
+  "description": "Your screen. Your simulation. Your cyber command center.",
+  "main": "src/main.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron . --dev",
+    "start": "electron .",
+    "build": "electron-builder --win nsis portable"
+  },
+  "devDependencies": { "electron": "^33.0.0", "electron-builder": "^25.0.0" },
+  "build": {
+    "appId": "dev.cipherlock.app",
+    "productName": "CIPHERLOCK",
+    "files": ["src/**/*", "assets/**/*", "package.json"],
+    "win": { "target": ["nsis", "portable"], "requestedExecutionLevel": "asInvoker" },
+    "nsis": { "oneClick": false, "perMachine": false, "allowToChangeInstallationDirectory": true, "artifactName": "CIPHERLOCK Setup.exe" },
+    "portable": { "artifactName": "CIPHERLOCK Portable.exe" }
+  }
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
+<title>CIPHERLOCK</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<canvas id="bg"></canvas>
+<div id="boot"><pre id="bootText"></pre></div>
+<header id="top">
+  <div><h1>CIPHERLOCK</h1><small>SECURITY OPERATIONS SIMULATION</small></div>
+  <div class="badge">CYBER OPERATIONS ACTIVE<br>SIMULATION MODE · NO REAL ATTACK</div>
+  <div class="status"><span>SYSTEM STATUS: ACTIVE</span><span>NETWORK: SIMULATED</span><span>THREAT LEVEL: UNKNOWN</span><span id="sess"></span>
+    <b id="clock"></b><i id="date"></i></div>
+</header>
+<main id="desktop"><nav id="icons"></nav></main>
+<footer id="dock"><span class="logo">CIPHERLOCK DOCK</span><div id="dockItems"></div></footer>
+<div id="exitDlg" hidden><div class="dlg"><h2>CIPHERLOCK EXIT SEQUENCE</h2><p>Simulation session detected.</p>
+  <button id="exitYes">[ EXIT SIMULATION ]</button><button id="exitNo">[ CANCEL ]</button></div></div>
+<div id="shutdown" hidden><pre></pre></div>
+<script src="wm.js"></script><script src="windows.js"></script><script src="app.js"></script>
+</body></html>
